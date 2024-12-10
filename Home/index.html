@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAIFLIX - HOME</title>
+    <link rel="shortcut icon" href="../assets/images/logonegative.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style/global.css">
+    <script src="../assets/js/menu-responsivo.js" defer></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h1>Página Inicial Senaiflix</h1>
+    <section class="banner">
+        <div class="container banner_posicionamento">
+            <header class="header_primario">
+                <a href="../Home/index.html">
+                    <img src="../assets/images/Logopositive.svg"
+                        alt="Logo do Senaiflix escrito em letras brancas, porem, o 'a' é simbolisado por uma camera">
+                </a>
+
+                <nav class="header_navegacão">
+                    <a href="../Home/index.html" class="header_link">Início</a>
+                    <a href="#filmes" class="header_link">Filmes</a>
+                    <a href="#series" class="header_link">Séries</a>
+                </nav>
+                <button id="nav_hamburguer" type="button" onclick="abrirMenuResponsivo()">
+                    <img src="../assets/images/icones/hamburger.png" alt="">
+                </button>
+
+            </header>
+            <div class="sinopse_posicionamento">
+                <h2 class="sinopse_titulo">stranger things</h2>
+                <p class="sinopse_paragrafo">A pequena cidade de Hawkins é cenário de estranhos acontecimentos. Após o
+                    desaparecimento de um garoto, surge uma menina com poderes sobrenaturais.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="container">
+        <form>
+            <div class="form_alinhamento_filto">
+                <label for="input_filtro_nome">Pesquise por Filmes e/ou Séries:</label>
+                <div>
+                    <input type="search" name="" id="input_filtro_nome" placeholder="stranger things"
+                        oninput="filtrarMidiaPorTituloOuGenero()" />
+                    <img src="../assets/images/icones/lupa.png" alt="Imagem que representa uma lupa">
+                </div>
+            </div>
+            <div class="form_alinhamento_filto">
+                <label for="">Filtrar por gênero:</label>
+                <select id="select_filtro_genero" onchange="filtrarMidiaPorTituloOuGenero()">
+                    <option value="">Selecione um gênero</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Mistério">Mistério</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="terror">terror</option>
+                    <option value="romance">romance</option>
+                    <option value="Drama">drama</option>
+                    <option value="suspense">suspense</option>
+                    <option value="animação">animação</option>
+                    <option value="sci-Fi"> Sci-Fi</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="aventura">Aventura</option>
+                </select>
+            </div>
+        </form>
+
+        <section id="filmes">
+            <h2>Filmes</h2>
+            <div>
+                <!-- <img class="card_poster" src="../assets/images/filme/duna.svg" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/bastardos.svg" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/furiosa.svg" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/Django.svg" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/batman.svg" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/lobodewallstreet.svg" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/eassimqueacaba.webp" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/umlugarsilencioso.webp" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/venom.webp" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/badboys.webp" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/deadpoolewolverine.webp" alt="Postêr de um filme">
+                <img class="card_poster" src="../assets/images/filme/divertidamente.webp" alt="Postêr de um filme"> -->
+            </div>
+        </section>
+        <section id="series">
+            <h2>Séries</h2>
+            <div>
+                <!-- <img class="card_poster" src="../assets/images/serie/posterstranger.webp" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/anne.svg" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/house of the dragon.svg" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/hotel.svg" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/euphoria.svg" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/Breaking_Bad 1.svg" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/gameofthrones.webp" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/sobrenatural.webp" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/prisonbreak.webp" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/osegredodorio.webp" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/greysanatomy.webp" alt="postêr de uma serie">
+                <img class="card_poster" src="../assets/images/serie/osenhordosaneis.webp" alt="postêr de uma serie"> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nos Sigam nas Redes Sociais:</p>
+        <div class="footer_posicionamento">
+            <a href="http://www.youtube.com" target="_blank">
+                <div class="background_redesocial">
+                    <img src="../assets/images/icones/youtube.png" alt="imagem do icone do youtube">
+                </div>
+            </a>
+            <a href="http://x.com/home" target="_blank">
+                <div class="background_redesocial">
+                    <img src="../assets/images/icones/twitter.png" alt="imagem do icone do youtube">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/li.etiii" target="_blank">
+                <div class="background_redesocial">
+                    <img src="../assets/images/icones/instagram.png" alt="imagem do icone do youtube">
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Menu Responsivo -->
+    <section id="menu_responsivo">
+        <div class="container">
+            <header class="header_primario">
+                <a href="../Home/index.html">
+                    <img src="../assets/images/Logopositive.svg" alt="">
+                </a>
+                <button type="button" id="nav_fechar" onclick="fecharMenuResponsivo()">
+                    <img src="../assets/images/icones/fechar.png">
+                </button>
+            </header>
+        </div>
+    </section>
+</body>
+
+</html>

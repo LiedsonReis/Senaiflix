@@ -1,0 +1,185 @@
+/* SESSÃO BANNER */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #000000 0%, #0d274668 12%, #294d7800 25%, #294d7800 75%, #0d274668 87%, #000000 100%, #000000 100%),
+        url(../assets/images/strangerthinsbanner1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_posicionamento {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sinopse_posicionamento {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 20%;
+}
+
+.sinopse_titulo,
+.sinopse_paragrafo {
+    color: var(--branco);
+    text-shadow: var(--preto) 0 0 17px;
+}
+
+.sinopse_titulo {
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sinopse_paragrafo {
+    width: 100%;
+    max-width: 500px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+/* SESSAO MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SESSAO FORM */
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.form_alinhamento_filto {
+    width: 100%;
+    max-width: 393px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 9px;
+}
+
+.form_alinhamento_filto>label {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* input - pesquisar por nome de filme e serie */
+
+.form_alinhamento_filto>div {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--brancoComOpacidade);
+    border: var(--bordas);
+    border-radius: var(--arredondamento);
+    padding: 4px;
+
+}
+
+.form_alinhamento_filto>div>input {
+
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+/* INPUT - PESQUISAR POR GENERO */
+
+.form_alinhamento_filto>select {
+    height: 38px;
+    background-color: transparent;
+    border: var(--bordas);
+    border-radius: var(--arredondamento);
+}
+
+.form_alinhamento_filto>div>input,
+.form_alinhamento_filto>select {
+    width: 100%;
+    color: var(--brancoComOpacidade);
+    font-size: 16px;
+    font-weight: 100;
+    outline: none;
+}
+
+.form_alinhamento_filto>select>option {
+    color: var(--preto);
+}
+
+/* SESSAO FILMES E SERIES */
+
+section#filmes,
+#series {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px
+}
+
+section#filmes>h2,
+#series>h2 {
+    color: var(--branco);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#filmes>div,
+#series>div {
+    width: 100%;
+    display: flex;
+    gap: 34px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card_poster {
+    /* width: 171.52px; */
+    height: 299px;
+    border-radius: var(--arredondamento);
+    cursor: pointer;
+}
+
+.card_poster:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+#series {
+    margin-top: 38px;
+}
+
+/* Mensagem Pesquisa*/
+.mensagem_sem_resultados{
+    color: var(--brancoComOpacidade);
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* responsivo */
+
+@media only screen and (max-width: 739px) {
+
+    #filmes>div,
+    #series>div {
+        justify-content: center;
+    }
+
+    section#filmes>h2,
+    #series>h2 {
+        text-align: center;
+    }
+}

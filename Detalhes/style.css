@@ -1,0 +1,42 @@
+/* .banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #000000 0%, #0d274668 12%, #294d7800 25%, #294d7800 75%, #0d274668 87%, #000000 100%, #000000 100%);
+        url(../assets/videos/VENOM\ -\ Trailer.mp4);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+} */
+
+.banner_posicionamento {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#trailer_video{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 36px;
+    color: var(--branco);
+}
+
+.caracteristicas{
+    display: flex;
+}
+
+.classificacao{
+    height: 40px;
+    width: 40px;
+}
